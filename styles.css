@@ -1,0 +1,10 @@
+#grid {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.video {
+	height: 50%;
+	width: 50%;
+	object-fit: cover;
+}

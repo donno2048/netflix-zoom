@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "author": "Elisha Hollander",
+  "name": "Netflix Zoom",
+  "version": "1",
+  "description": "This extension makes it look like you're in a zoom call while you're watching Netflix",
+  "homepage_url": "https://github.com/donno2048/netflix-zoom",
+  "icons": {"16": "icon_16.png"},
+  "browser_action": {},
+  "permissions": ["*://*.netflix.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.netflix.com/*"],
+      "css": ["styles.css"]
+    }
+  ],
+  "background": {"scripts": ["background.js"]},
+  "web_accessible_resources": [
+    "videos/*",
+    "script.js"
+  ]
+}
